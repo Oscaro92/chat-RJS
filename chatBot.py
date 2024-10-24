@@ -1,5 +1,8 @@
+# * import libraries
 import time
 import streamlit as st
+
+# * import agent
 from agent import AgentRJS
 
 st.title("🤖 Bot RJS")

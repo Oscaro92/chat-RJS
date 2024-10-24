@@ -1,3 +1,4 @@
+# * import libraries
 import os, shutil
 from decouple import config
 from langchain_openai import OpenAIEmbeddings
@@ -16,6 +17,7 @@ class AgentRJS():
         self.llm = ChatOpenAI(model=model, temperature=temperature)
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
+
     def loadDoc(self, url: str)->list:
         '''
         Charger les documents
@@ -31,6 +33,7 @@ class AgentRJS():
             page.page_content = page.page_content.replace('\n', ' ')
 
         return pages
+
 
     def saveDoc(self, chunks: list):
         # Load the existing database.
@@ -57,6 +60,7 @@ class AgentRJS():
             db.persist()
         else:
             print("✅ No new documents to add")
+
 
     def calculateChunkIds(self, chunks):
         '''
