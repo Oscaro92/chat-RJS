@@ -7,7 +7,7 @@ An agent who retrieves board game notices from a RAG to process requests.
 
 Clone the repository
 ```shell
-git clone https://github.com/<your-username>/chat-RJS.git
+git clone https://github.com/Oscaro92/chat-RJS.git
 cd chat-RJS
 ```
 
@@ -44,7 +44,7 @@ mail-agent/
 ├── agent.py            # Agent 
 ├── chatBot.py          # Chat bot
 ├── docs.py             # Add documents in RAG
-├── Chroma              # DB folder
+├── Chroma              # Database
 │   └── ...
 ├── requirements.txt    # Dependencies
 ├── .env                # Environment variables
