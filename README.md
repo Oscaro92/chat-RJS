@@ -40,7 +40,7 @@ streamlit run chatBot.py
 ## 📁 Project Structure
 
 ```
-mail-agent/
+chat-RJS/
 ├── agent.py            # Agent 
 ├── chatBot.py          # Chat bot
 ├── docs.py             # Add documents in RAG
